@@ -1,12 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfólio | Gustavo Paiva</title>
+  <style>
+    body {
+      background-color: #0d1117;
+      color: #c9d1d9;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    h1, h2 {
+      text-align: center;
+      color: #64B5F6;
+    }
+    .typing {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .sobre {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #161b22;
+      border-radius: 10px;
+      box-shadow: 0 0 20px #1976D2;
+    }
+    .sobre img {
+      float: right;
+      margin-left: 20px;
+      border-radius: 10px;
+    }
+    .tech-stack {
+      text-align: center;
+      margin: 40px 0;
+    }
+    .tech-icons, .badges {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    .badges img, .tech-icons img {
+      height: 40px;
+    }
+    @media (max-width: 768px) {
+      .sobre img {
+        float: none;
+        display: block;
+        margin: 20px auto;
+      }
+    }
+  </style>
 </head>
 <body>
-    <h1>CORINTHIANS</h1>
-    <img src="./images/corinthians_2023_festcolor_painel_cartonado_mega_90346.jpg">
+
+  <!-- Cabeçalho animado -->
+  <h1>
+    <img src="https://capsule-render.vercel.app/api?type=waving&height=300&color=1976D2&text=Gustavo%20%20Paiva&fontColor=64B5F6&fontSize=85&textBg=false&section=header&reversal=false" alt="Banner Gustavo Paiva"/>
+  </h1>
+
+  <!-- Texto dinâmico -->
+  <div class="typing">
+    <img src="https://readme-typing-svg.herokuapp.com?font=Changa+One&duration=2000&pause=1000&width=435&lines=Cybersecurity+%7C+Network+Infrastructure;+++NOC%7C+N1+%7Cnetwork+analyst" alt="Typing SVG">
+  </div>
+
+  <!-- Sobre Mim -->
+  <section class="sobre">
+    <h2>Sobre mim</h2>
+    <img src="https://i.pinimg.com/originals/5f/47/3e/5f473e7e1460acc093943bbf44889e39.gif" alt="GIF Hacker" height="190">
+    <p>
+      Cursando Cybersecurity e Redes de Computadores. Atuando como Analista de redes N1. <br>
+      Conhecimentos em computação em nuvem com foco em AWS e Azure.
+    </p>
+  </section>
+
+  <!-- Tech Stack -->
+  <section class="tech-stack">
+    <h2>Tech Stack</h2>
+
+    <div class="tech-icons">
+      <img src="https://skillicons.dev/icons?i=linux,kali,powershell,regex,windows,azure,aws,nginx,bash,ubuntu" alt="Tech Icons">
+    </div>
+
+    <div class="badges">
+      <img src="https://img.shields.io/badge/AWS-%23FF9900.svg?logo=amazon-web-services&logoColor=white" alt="AWS Badge">
+      <img src="https://custom-icon-badges.demolab.com/badge/Microsoft%20Azure-0089D6?logo=msazure&logoColor=white" alt="Azure Badge">
+      <img src="https://img.shields.io/badge/Debian-A81D33?logo=debian&logoColor=fff" alt="Debian Badge">
+      <img src="https://img.shields.io/badge/Kali%20Linux-557C94?logo=kalilinux&logoColor=fff" alt="Kali Badge">
+      <img src="https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black" alt="Linux Badge">
+      <img src="https://custom-icon-badges.demolab.com/badge/Windows-0078D6?logo=windows11&logoColor=white" alt="Windows Badge">
+    </div>
+  </section>
+
 </body>
 </html>
