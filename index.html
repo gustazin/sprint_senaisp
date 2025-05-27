@@ -3,88 +3,131 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Portfólio | Gustavo Paiva</title>
+  <title>Gustavo Paiva | Portfólio</title>
   <style>
     body {
       background-color: #0d1117;
       color: #c9d1d9;
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
     }
-    h1, h2 {
+
+    header {
       text-align: center;
-      color: #64B5F6;
+      background-color: #161b22;
+      padding-bottom: 20px;
     }
+
+    header img {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+    }
+
     .typing {
       display: flex;
       justify-content: center;
-      margin-top: 20px;
+      margin: 20px 0;
     }
-    .sobre {
-      max-width: 900px;
-      margin: 50px auto;
+
+    section {
+      max-width: 1000px;
+      margin: auto;
       padding: 20px;
-      background-color: #161b22;
-      border-radius: 10px;
+    }
+
+    .sobre {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      background-color: #1f2937;
+      border-radius: 12px;
+      padding: 30px;
       box-shadow: 0 0 20px #1976D2;
+      margin-top: 30px;
     }
+
     .sobre img {
-      float: right;
-      margin-left: 20px;
+      max-height: 200px;
+      margin-left: auto;
       border-radius: 10px;
     }
-    .tech-stack {
-      text-align: center;
-      margin: 40px 0;
+
+    .texto {
+      flex: 1;
+      min-width: 250px;
     }
-    .tech-icons, .badges {
+
+    .tech-section {
+      margin-top: 50px;
+      text-align: center;
+    }
+
+    .icons, .badges {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      gap: 10px;
+      gap: 12px;
       margin-top: 20px;
     }
-    .badges img, .tech-icons img {
+
+    .icons img, .badges img {
       height: 40px;
     }
+
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      padding: 20px;
+      color: #888;
+      border-top: 1px solid #2a2a2a;
+    }
+
     @media (max-width: 768px) {
+      .sobre {
+        flex-direction: column;
+        text-align: center;
+      }
+
       .sobre img {
-        float: none;
-        display: block;
-        margin: 20px auto;
+        margin: 20px auto 0;
       }
     }
   </style>
 </head>
 <body>
 
-  <!-- Cabeçalho animado -->
-  <h1>
-    <img src="https://capsule-render.vercel.app/api?type=waving&height=300&color=1976D2&text=Gustavo%20%20Paiva&fontColor=64B5F6&fontSize=85&textBg=false&section=header&reversal=false" alt="Banner Gustavo Paiva"/>
-  </h1>
+  <header>
+    <img src="https://capsule-render.vercel.app/api?type=waving&height=300&color=1976D2&text=Gustavo%20Paiva&fontColor=64B5F6&fontSize=85&textBg=false&section=header&reversal=false" alt="Banner Gustavo Paiva">
+    <div class="typing">
+      <img src="https://readme-typing-svg.herokuapp.com?font=Changa+One&duration=2000&pause=1000&width=435&lines=Cybersecurity+%7C+Network+Infrastructure+%7C+NOC+%7C+N1+%7C+network+analyst" alt="typing text">
+    </div>
+  </header>
 
-  <!-- Texto dinâmico -->
-  <div class="typing">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Changa+One&duration=2000&pause=1000&width=435&lines=Cybersecurity+%7C+Network+Infrastructure;+++NOC%7C+N1+%7Cnetwork+analyst" alt="Typing SVG">
-  </div>
-
-  <!-- Sobre Mim -->
   <section class="sobre">
-    <h2>Sobre mim</h2>
-    <img src="https://i.pinimg.com/originals/5f/47/3e/5f473e7e1460acc093943bbf44889e39.gif" alt="GIF Hacker" height="190">
-    <p>
-      Cursando Cybersecurity e Redes de Computadores. Atuando como Analista de redes N1. <br>
-      Conhecimentos em computação em nuvem com foco em AWS e Azure.
-    </p>
+    <div class="texto">
+      <h2>Sobre Mim</h2>
+      <p>
+        🎯 Analista de Redes com vivência prática em ambientes Cisco, AWS, Azure e foco contínuo em Cibersegurança.
+        <br><br>
+        Atualmente atuo como Analista de Redes na <strong>Vivo Vita</strong>, após formação técnica em Redes de Computadores no <strong>SENAI Paulo Antônio Skaf</strong> e passagem pelo programa Start Vivo Vita.
+        <br><br>
+        Tenho experiência prática com configuração e troubleshooting de redes Cisco (switches, access points, WLCs, roteadores), além de suporte NOC/N1. Trabalho com sistemas Linux e Windows Server, e ambientes em nuvem (AWS e Azure), com criação de VMs, redes virtuais, VPNs site-to-site e serviços de armazenamento.
+        <br><br>
+        Atualmente estou cursando o 1º semestre de <strong>Segurança Cibernética</strong>, focando em segurança de redes, hardening e defesa em profundidade. Também estou desenvolvendo um software de varredura de rede para ambientes IT, OT e IoT.
+        <br><br>
+        🔎 Busco consolidar meus conhecimentos técnicos em infraestrutura, segurança e automação de redes, e estou aberto a oportunidades de crescimento e inovação.
+      </p>
+    </div>
+    <img src="https://i.pinimg.com/originals/5f/47/3e/5f473e7e1460acc093943bbf44889e39.gif" alt="GIF hacker">
   </section>
 
-  <!-- Tech Stack -->
-  <section class="tech-stack">
+  <section class="tech-section">
     <h2>Tech Stack</h2>
 
-    <div class="tech-icons">
-      <img src="https://skillicons.dev/icons?i=linux,kali,powershell,regex,windows,azure,aws,nginx,bash,ubuntu" alt="Tech Icons">
+    <div class="icons">
+      <img src="https://skillicons.dev/icons?i=linux,kali,powershell,regex,windows,azure,aws,nginx,bash,ubuntu" alt="Stack Icons">
     </div>
 
     <div class="badges">
@@ -96,6 +139,10 @@
       <img src="https://custom-icon-badges.demolab.com/badge/Windows-0078D6?logo=windows11&logoColor=white" alt="Windows Badge">
     </div>
   </section>
+
+  <footer>
+    Desenvolvido por Gustavo Paiva &copy; 2025
+  </footer>
 
 </body>
 </html>
