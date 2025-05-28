@@ -2,147 +2,129 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Gustavo Paiva | Portfólio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gustavo Paiva - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Changa+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
-    body {
-      background-color: #0d1117;
-      color: #c9d1d9;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
-
+    body {
+      background-color: #0c0f12;
+      font-family: Arial, sans-serif;
+      color: #e0e0e0;
+    }
     header {
+      background: linear-gradient(to right, #0c0f12, #1a2b4c);
+      padding: 40px 20px 20px;
       text-align: center;
-      background-color: #161b22;
-      padding-bottom: 20px;
     }
-
-    header img {
-      width: 100%;
-      max-height: 300px;
-      object-fit: cover;
+    header h1 {
+      font-size: 48px;
+      color: #64B5F6;
     }
-
-    .typing {
-      display: flex;
-      justify-content: center;
-      margin: 20px 0;
+    header p {
+      font-family: 'Changa One', sans-serif;
+      font-size: 22px;
+      color: #29B6F6;
+      margin-top: 10px;
     }
-
     section {
       max-width: 1000px;
-      margin: auto;
-      padding: 20px;
+      margin: 40px auto;
+      padding: 0 20px;
     }
-
     .sobre {
       display: flex;
-      flex-wrap: wrap;
-      align-items: flex-start;
-      background-color: #1f2937;
-      border-radius: 12px;
-      padding: 30px;
-      box-shadow: 0 0 20px #1976D2;
-      margin-top: 30px;
+      gap: 20px;
     }
-
     .sobre img {
-      max-height: 200px;
-      margin-left: auto;
-      border-radius: 10px;
+      height: 180px;
     }
-
-    .texto {
+    .sobre div {
       flex: 1;
-      min-width: 250px;
     }
-
-    .tech-section {
-      margin-top: 50px;
-      text-align: center;
+    h2 {
+      color: #64B5F6;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #1976D2;
+      padding-bottom: 5px;
     }
-
-    .icons, .badges {
+    .tech-icons, .badges {
       display: flex;
-      justify-content: center;
       flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 20px;
+      gap: 10px;
+      margin-top: 15px;
     }
-
-    .icons img, .badges img {
-      height: 40px;
+    .tech-icons i, .cli-icon {
+      font-size: 30px;
+      color: #64B5F6;
+      background: #1c1f26;
+      padding: 10px;
+      border-radius: 8px;
     }
-
+    .badges img {
+      height: 32px;
+    }
     footer {
       text-align: center;
-      margin-top: 50px;
       padding: 20px;
-      color: #888;
-      border-top: 1px solid #2a2a2a;
-    }
-
-    @media (max-width: 768px) {
-      .sobre {
-        flex-direction: column;
-        text-align: center;
-      }
-
-      .sobre img {
-        margin: 20px auto 0;
-      }
+      background-color: #12161b;
+      color: #546e7a;
+      font-size: 14px;
     }
   </style>
 </head>
 <body>
-
   <header>
-    <img src="https://capsule-render.vercel.app/api?type=waving&height=300&color=1976D2&text=Gustavo%20Paiva&fontColor=64B5F6&fontSize=85&textBg=false&section=header&reversal=false" alt="Banner Gustavo Paiva">
-    <div class="typing">
-      <img src="https://readme-typing-svg.herokuapp.com?font=Changa+One&duration=2000&pause=1000&width=435&lines=Cybersecurity+%7C+Network+Infrastructure+%7C+NOC+%7C+N1+%7C+network+analyst" alt="typing text">
-    </div>
+    <h1>Gustavo Paiva</h1>
+    <p>Cybersecurity | Network Infrastructure | NOC | N1</p>
   </header>
 
   <section class="sobre">
-    <div class="texto">
+    <div>
       <h2>Sobre Mim</h2>
       <p>
-        🎯 Analista de Redes com vivência prática em ambientes Cisco, AWS, Azure e foco contínuo em Cibersegurança.
-        <br><br>
-        Atualmente atuo como Analista de Redes na <strong>Vivo Vita</strong>, após formação técnica em Redes de Computadores no <strong>SENAI Paulo Antônio Skaf</strong> e passagem pelo programa Start Vivo Vita.
-        <br><br>
-        Tenho experiência prática com configuração e troubleshooting de redes Cisco (switches, access points, WLCs, roteadores), além de suporte NOC/N1. Trabalho com sistemas Linux e Windows Server, e ambientes em nuvem (AWS e Azure), com criação de VMs, redes virtuais, VPNs site-to-site e serviços de armazenamento.
-        <br><br>
-        Atualmente estou cursando o 1º semestre de <strong>Segurança Cibernética</strong>, focando em segurança de redes, hardening e defesa em profundidade. Também estou desenvolvendo um software de varredura de rede para ambientes IT, OT e IoT.
-        <br><br>
-        🔎 Busco consolidar meus conhecimentos técnicos em infraestrutura, segurança e automação de redes, e estou aberto a oportunidades de crescimento e inovação.
+        Analista de Redes com experiência prática em ambientes Cisco, cloud (AWS/Azure), redes corporativas e cibersegurança. Atualmente atuando na Vivo Vita e em formação no SENAI e curso técnico em Segurança Cibernética.
+      </p>
+      <p>
+        Vivência em troubleshooting de redes, ambientes Linux/Windows Server, criação de VMs, redes virtuais, VPNs site-to-site e desenvolvimento de ferramentas de varredura de rede.
       </p>
     </div>
-    <img src="https://i.pinimg.com/originals/5f/47/3e/5f473e7e1460acc093943bbf44889e39.gif" alt="GIF hacker">
+    <img src="https://i.pinimg.com/originals/5f/47/3e/5f473e7e1460acc093943bbf44889e39.gif" alt="GIF técnico">
   </section>
 
-  <section class="tech-section">
-    <h2>Tech Stack</h2>
-
-    <div class="icons">
-      <img src="https://skillicons.dev/icons?i=linux,kali,powershell,regex,windows,azure,aws,nginx,bash,ubuntu" alt="Stack Icons">
+  <section>
+    <h2>Competências Técnicas</h2>
+    <div class="tech-icons">
+      <i class="fab fa-linux" title="Linux"></i>
+      <i class="fas fa-terminal cli-icon" title="Shell/CLI"></i>
+      <i class="fab fa-aws" title="AWS"></i>
+      <i class="fab fa-microsoft" title="Azure"></i>
+      <i class="fas fa-network-wired" title="Networking"></i>
+      <i class="fas fa-server" title="Windows Server"></i>
+      <i class="fas fa-shield-alt" title="Cybersecurity"></i>
+      <i class="fas fa-code" title="Regex / Scripts"></i>
     </div>
+  </section>
 
+  <section>
+    <h2>Stacks / Tecnologias</h2>
     <div class="badges">
-      <img src="https://img.shields.io/badge/AWS-%23FF9900.svg?logo=amazon-web-services&logoColor=white" alt="AWS Badge">
-      <img src="https://custom-icon-badges.demolab.com/badge/Microsoft%20Azure-0089D6?logo=msazure&logoColor=white" alt="Azure Badge">
-      <img src="https://img.shields.io/badge/Debian-A81D33?logo=debian&logoColor=fff" alt="Debian Badge">
-      <img src="https://img.shields.io/badge/Kali%20Linux-557C94?logo=kalilinux&logoColor=fff" alt="Kali Badge">
-      <img src="https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black" alt="Linux Badge">
-      <img src="https://custom-icon-badges.demolab.com/badge/Windows-0078D6?logo=windows11&logoColor=white" alt="Windows Badge">
+      <img src="https://img.shields.io/badge/AWS-%23FF9900.svg?logo=amazon-aws&logoColor=white">
+      <img src="https://custom-icon-badges.demolab.com/badge/Microsoft%20Azure-0089D6?logo=msazure&logoColor=white">
+      <img src="https://img.shields.io/badge/Debian-A81D33?logo=debian&logoColor=fff">
+      <img src="https://img.shields.io/badge/Kali%20Linux-557C94?logo=kalilinux&logoColor=fff">
+      <img src="https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black">
+      <img src="https://custom-icon-badges.demolab.com/badge/Windows-0078D6?logo=windows11&logoColor=white">
     </div>
   </section>
 
   <footer>
-    Desenvolvido por Gustavo Paiva &copy; 2025
+    &copy; 2025 Gustavo Paiva. Todos os direitos reservados.
   </footer>
-
 </body>
 </html>
