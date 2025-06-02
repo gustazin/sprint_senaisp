@@ -1,130 +1,160 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gustavo Paiva - Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Changa+One&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gustavo Paiva | Portfólio</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
   <style>
+    :root {
+      --bg-dark: #0e1a25;
+      --bg-medium: #12212e;
+      --bg-light: #1e3244;
+      --primary: #42b6ff;
+      --accent: #2a9dff;
+      --text: #d3eaff;
+      --font-main: 'Segoe UI', sans-serif;
+    }
+
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
+
     body {
-      background-color: #0c0f12;
-      font-family: Arial, sans-serif;
-      color: #e0e0e0;
+      font-family: var(--font-main);
+      background-color: var(--bg-dark);
+      color: var(--text);
     }
+
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 220px;
+      height: 100vh;
+      background: var(--bg-medium);
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .sidebar h2 {
+      font-size: 1.2rem;
+      color: var(--primary);
+    }
+
+    .sidebar a {
+      text-decoration: none;
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 0.5rem;
+      border-radius: 5px;
+    }
+
+    .sidebar a:hover {
+      background: var(--bg-light);
+    }
+
+    .main {
+      margin-left: 240px;
+      padding: 2rem;
+    }
+
     header {
-      background: linear-gradient(to right, #0c0f12, #1a2b4c);
-      padding: 40px 20px 20px;
-      text-align: center;
+      margin-bottom: 2rem;
     }
+
     header h1 {
-      font-size: 48px;
-      color: #64B5F6;
+      font-size: 2.5rem;
+      color: var(--primary);
     }
-    header p {
-      font-family: 'Changa One', sans-serif;
-      font-size: 22px;
-      color: #29B6F6;
-      margin-top: 10px;
+
+    .section {
+      margin-bottom: 2rem;
     }
-    section {
-      max-width: 1000px;
-      margin: 40px auto;
-      padding: 0 20px;
+
+    .section h2 {
+      color: var(--accent);
+      margin-bottom: 0.5rem;
     }
-    .sobre {
-      display: flex;
-      gap: 20px;
-    }
-    .sobre img {
-      height: 180px;
-    }
-    .sobre div {
-      flex: 1;
-    }
-    h2 {
-      color: #64B5F6;
-      margin-bottom: 10px;
-      border-bottom: 2px solid #1976D2;
-      padding-bottom: 5px;
-    }
-    .tech-icons, .badges {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 15px;
-    }
-    .tech-icons i, .cli-icon {
-      font-size: 30px;
-      color: #64B5F6;
-      background: #1c1f26;
-      padding: 10px;
+
+    .card {
+      background: var(--bg-medium);
+      padding: 1rem;
       border-radius: 8px;
+      margin-bottom: 1rem;
     }
-    .badges img {
-      height: 32px;
+
+    .card i {
+      color: var(--primary);
+      margin-right: 0.5rem;
     }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #12161b;
-      color: #546e7a;
-      font-size: 14px;
+
+    .badge {
+      background-color: var(--accent);
+      padding: 0.3rem 0.6rem;
+      border-radius: 12px;
+      color: #fff;
+      margin: 0.2rem;
+      display: inline-block;
+      font-size: 0.8rem;
     }
   </style>
 </head>
+
 <body>
-  <header>
-    <h1>Gustavo Paiva</h1>
-    <p>Cybersecurity | Network Infrastructure | NOC | N1</p>
-  </header>
+  <div class="sidebar">
+    <h2><i class="fas fa-terminal"></i> Gustavo Paiva</h2>
+    <a href="#sobre"><i class="fas fa-user"></i>Sobre</a>
+    <a href="#competencias"><i class="fas fa-network-wired"></i>Competências</a>
+    <a href="#stacks"><i class="fas fa-cubes"></i>Stacks</a>
+  </div>
 
-  <section class="sobre">
-    <div>
+  <div class="main">
+    <header>
+      <h1>Portfólio Profissional</h1>
+      <p>Cybersecurity | Network | Cloud | NOC</p>
+    </header>
+
+    <section class="section" id="sobre">
       <h2>Sobre Mim</h2>
-      <p>
-        Analista de Redes com experiência prática em ambientes Cisco, cloud (AWS/Azure), redes corporativas e cibersegurança. Atualmente atuando na Vivo Vita e em formação no SENAI e curso técnico em Segurança Cibernética.
-      </p>
-      <p>
-        Vivência em troubleshooting de redes, ambientes Linux/Windows Server, criação de VMs, redes virtuais, VPNs site-to-site e desenvolvimento de ferramentas de varredura de rede.
-      </p>
-    </div>
-    <img src="https://i.pinimg.com/originals/5f/47/3e/5f473e7e1460acc093943bbf44889e39.gif" alt="GIF técnico">
-  </section>
+      <div class="card">
+        <p>Sou estudante de infraestrutura, redes, cybersecurity e cloud, com experiência prática em ambientes como AWS, Azure, pfSense, Cisco e servidores Linux/Windows.</p>
+      </div>
+    </section>
 
-  <section>
-    <h2>Competências Técnicas</h2>
-    <div class="tech-icons">
-      <i class="fab fa-linux" title="Linux"></i>
-      <i class="fas fa-terminal cli-icon" title="Shell/CLI"></i>
-      <i class="fab fa-aws" title="AWS"></i>
-      <i class="fab fa-microsoft" title="Azure"></i>
-      <i class="fas fa-network-wired" title="Networking"></i>
-      <i class="fas fa-server" title="Windows Server"></i>
-      <i class="fas fa-shield-alt" title="Cybersecurity"></i>
-      <i class="fas fa-code" title="Regex / Scripts"></i>
-    </div>
-  </section>
+    <section class="section" id="competencias">
+      <h2>Competências Técnicas</h2>
+      <div class="card">
+        <p><i class="fas fa-shield-alt"></i> Cybersecurity & Hardening</p>
+        <p><i class="fas fa-server"></i> Infraestrutura e Servidores</p>
+        <p><i class="fas fa-cloud"></i> Cloud AWS / Azure</p>
+        <p><i class="fas fa-code-branch"></i> Git, DevOps, CI/CD</p>
+        <p><i class="fas fa-tools"></i> Monitoramento (Zabbix, Grafana)</p>
+      </div>
+    </section>
 
-  <section>
-    <h2>Stacks / Tecnologias</h2>
-    <div class="badges">
-      <img src="https://img.shields.io/badge/AWS-%23FF9900.svg?logo=amazon-aws&logoColor=white">
-      <img src="https://custom-icon-badges.demolab.com/badge/Microsoft%20Azure-0089D6?logo=msazure&logoColor=white">
-      <img src="https://img.shields.io/badge/Debian-A81D33?logo=debian&logoColor=fff">
-      <img src="https://img.shields.io/badge/Kali%20Linux-557C94?logo=kalilinux&logoColor=fff">
-      <img src="https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black">
-      <img src="https://custom-icon-badges.demolab.com/badge/Windows-0078D6?logo=windows11&logoColor=white">
-    </div>
-  </section>
-
-  <footer>
-    &copy; 2025 Gustavo Paiva. Todos os direitos reservados.
-  </footer>
+    <section class="section" id="stacks">
+      <h2>Stacks e Ferramentas</h2>
+      <div class="card">
+        <span class="badge">Cisco</span>
+        <span class="badge">Fortinet</span>
+        <span class="badge">pfSense</span>
+        <span class="badge">Linux</span>
+        <span class="badge">Windows Server</span>
+        <span class="badge">Azure</span>
+        <span class="badge">AWS</span>
+        <span class="badge">Grafana</span>
+        <span class="badge">Zabbix</span>
+      </div>
+    </section>
+  </div>
 </body>
+
 </html>
